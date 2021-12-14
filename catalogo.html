@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo</title>
+    <link rel="stylesheet" href="estilos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+</head>
+
+<body>
+
+    <div class="encabezado bigEncabezado">
+        <div class="cabezalOpacidad">
+            <div class="cabezal">
+                <header>
+                    <a href="index.html"><img src="img/logo.png" alt="logotipo decathlon"></a>
+                </header>
+
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Portada</a></li>
+                        <li class="liActivo"><a href="catalogo.html">Catalogo</a></li>
+                        <li><a href="error.html">Ingresar</a></li>
+                    </ul>
+                </nav>
+
+
+                <div class="navHeader">
+                    <div class="iconos">
+                        <a href="catalogo.html#filtroImg">
+                            <img src="img/lupa.png" alt="icono de lupa"></a>
+                        <a href="error.html">
+                            <img src="img/persona.png" alt="icono de persona"></a>
+                        <a href="index.html#ofertas">
+                            <img src="img/carrito.png" alt="icono de carrito"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <article class="presentacionBlack presentacion">
+            <h2>Black friday en Decathlon</h2>
+            <p>Encontrá ofertas increibles de los mejores productos.</p>
+        </article>
+    </div>
+
+    <div class="preOferta"><img src="img/blackfriday.jpg" alt="banner de decathlon de black friday">
+        <div class="timmer">
+            <p>Black Friday finaliza en</p>
+            <div id="contador"></div>
+        </div>
+    </div>
+
+    <section id="sliderGral">
+        <div class="slider-contenedor">
+        </div>
+
+    </section>
+
+
+    <!-- CATALOGO -->
+
+    <div class="catalogoBack">
+        <section class="catalogo">
+
+            <!-- Filtro por imágenes -->
+
+            <div id="filtroImg">
+                <img src="img/todos.png" alt="todos" title="Todos">
+                <img src="img/campera.png" alt="camperas" title="Camperas">
+                <img src="img/remeras.png" alt="remeras" title="Remeras">
+                <img src="img/gorro.png" alt="gorros" title="Gorros">
+                <img src="img/championes.png" alt="championes" title="Championes">
+                <img src="img/camping.png" alt="carpas" title="Carpas">
+            </div>
+
+
+            <div class="buscarNombre">
+                <div class="opciones">
+                    <input type="text" placeholder="¿Qué estás buscando?" id="texto-buscar">
+                </div>
+                <div id="contenedor-productos">
+                </div>
+            </div>
+
+
+            <!-- Filtro por rango -->
+            <div class="rangos">
+                <label>Precio mínimo</label>
+                <input type="number" id="precMin">
+                <label>Precio máximo</label>
+                <input type="number" id="precMax">
+            </div>
+
+
+            <!-- PRODUCTOS -->
+
+            <section id="productos"></section>
+
+            <!-- FIN CATALOGO -->
+
+
+
+        </section>
+    </div>
+
+
+    <footer>
+
+        <div class="logoFooter">
+            <img src="img/decathlonColor.png" alt="logotipo decathlon">
+        </div>
+        <div class="textoFooter">
+            <p>Todos los derechos reservados ©</p>
+        </div>
+        <div class="redesFooter">
+
+            <a href="https://www.instagram.com/decathlon_uruguay/" target="_blank" title="Ir a web de Instagram">
+                <div class="redes1"></div>
+            </a>
+
+            <a href="https://www.facebook.com/decathlonuruguay/" target="_blank" title="Ir a web de Facebook">
+                <div class="redes2"></div>
+            </a>
+
+            <a href="https://twitter.com/Decathlon" target="_blank" title="Ir a web de Twitter">
+                <div class="redes3"></div>
+            </a>
+
+        </div>
+
+    </footer>
+
+    <script src="productos.js"></script>
+
+    <script src="ofertas.js"></script>
+    <script src="catalogo.js"></script>
+
+
+</body>
+
+</html>

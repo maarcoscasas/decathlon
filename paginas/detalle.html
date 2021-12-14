@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Aca está tu producto!</title>
+    <link rel="stylesheet" href="../estilos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+</head>
+
+<body>
+
+    <div class="encabezado textura">
+        <div class="cabezalOpacidad">
+            <div class="cabezal">
+                <header>
+                    <a href="../index.html"><img src="../img/logo.png" alt="logotipo decathlon"></a>
+                </header>
+
+
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Portada</a></li>
+                        <li class="liActivo"><a href="../catalogo.html">Catalogo</a></li>
+                        <li><a href="../error.html">Ingresar</a></li>
+                    </ul>
+                </nav>
+
+
+                <div class="navHeader">
+                    <div class="iconos">
+                        <a href="../catalogo.html#filtroImg">
+                            <img src="../img/lupa.png" alt="icono de lupa"></a>
+                        <a href="../error.html">
+                            <img src="../img/persona.png" alt="icono de persona"></a>
+                        <a href="../index.html#ofertas">
+                            <img src="../img/carrito.png" alt="icono de carrito"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- detalle -->
+
+        <div class="detalle">
+
+
+            <div class="detalleIzq">
+
+                <div class="dIContent">
+                    <h1></h1>
+                    <h2></h2>
+                </div>
+
+                <article>
+                    <figure><img id="imgDetalle" src="" alt=""></figure>
+                    <!-- esto es de carga dinamica -->
+
+
+                    <figure><img src="../img/remera1.jpg" alt="Remera deportiva"></figure>
+                    <figure><img src="../img/camping2.jpg" alt="Carpa para dos personas"></figure>
+                    <figure><img src="../img/championes1.jpg" alt="Championes para esquiar"></figure>
+                </article>
+
+
+
+            </div>
+
+
+
+            <div class="detalleDer">
+
+
+                <h5>Características</h5>
+                <h6></h6>
+
+
+                <!-- TABLA -->
+
+                <div class="tabla">
+                    <h2>Descuentos en tarjetas seleccionadas</h2>
+                    <div id="wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Banco Santander</th>
+                                    <th>Banco Itau</th>
+                                    <th>Banco Brou</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-label="Santander">25%</td>
+                                    <td data-label="Itau">10%</td>
+                                    <td data-label="Brou">20%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="disponible">
+
+                    <h6>Producto disponible en</h6>
+
+                    <ul>
+                        <li>Las Piedras Shopping</li>
+                        <li>Car One</li>
+                        <li>Chuy</li>
+                    </ul>
+
+                </div>
+
+                <!-- fin tabla -->
+                <a href="../catalogo.html" class="volver">Volver</a>
+
+            </div>
+        </div>
+
+        <section class="sugerencias marginNeg">
+
+
+            <h2>También te puede interesar:</h2>
+            <!-- el primero es siempre de carga dinamica, lo otro relleno estatico -->
+
+            <div id="sugeridos">
+
+
+                <div class="divSugeridos">
+                    <p>Carpa 2 personas</p>
+                    <figure><img src="../img/camping1.jpg" alt="carpa 2 personas"></figure>
+                </div>
+
+                <div class="divSugeridos">
+                    <figure>
+                        <p>Gorro polar</p>
+                        <img src="../img/gorro1.jpg" alt="gorro polar">
+                    </figure>
+                </div>
+
+                <div class="divSugeridos">
+                    <p>Remera térmica</p>
+                    <figure><img src="../img/remera1.jpg" alt="remera termica para esquiar"></figure>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="logoFooter">
+            <img src="../img/decathlonColor.png" alt="logotipo decathlon">
+        </div>
+        <div class="textoFooter">
+            <p>Todos los derechos reservados ©</p>
+        </div>
+        <div class="redesFooter">
+
+            <a href="https://www.instagram.com/decathlon_uruguay/" target="_blank" title="Ir a web de Instagram">
+                <div class="redes1"></div>
+            </a>
+
+            <a href="https://www.facebook.com/decathlonuruguay/" target="_blank" title="Ir a web de Facebook">
+                <div class="redes2"></div>
+            </a>
+
+            <a href="https://twitter.com/Decathlon" target="_blank" title="Ir a web de Twitter">
+                <div class="redes3"></div>
+            </a>
+
+        </div>
+
+    </footer>
+
+    <script src="../productos.js"></script>
+    <script src="scriptDetalle.js"></script>
+</body>
+
+</html>
